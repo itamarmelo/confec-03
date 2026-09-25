@@ -1,0 +1,488 @@
+﻿<!-- React mount point (kept for platform compatibility) -->
+  <div id="root"></div>
+
+  <!-- ============ STATIC SITE CONTENT ============ -->
+  <div id="app-content">
+
+  <!-- NAVBAR -->
+  <header id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="logo">
+        <img src="https://media.base44.com/images/public/6a0f6ddec17ecab63a93ce8d/2b5df1fbe_image.png" alt="Logo ConFEC" />
+        <span class="brand"><span class="con">Con</span><span class="fec">FEC</span><span class="ufg">UFG 2027</span></span>
+      </a>
+      <nav class="nav-links">
+        <a href="#tracks">Trilhas</a>
+        <a href="#mini-cursos">Mini Cursos</a>
+        <a href="#schedule">Cronograma</a>
+        <a href="#speakers">Palestrantes</a>
+        <a href="#about">Sobre</a>
+        <a href="#registration" class="btn-inscreva">Inscreva-se</a>
+        <a href="#sponsor">Seja um Patrocinador</a>
+      </nav>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Menu">
+        <svg id="menu-icon-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        <svg id="menu-icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+  <div id="mobile-menu">
+    <a href="#tracks">Trilhas</a>
+    <a href="#mini-cursos">Mini Cursos</a>
+    <a href="#schedule">Cronograma</a>
+    <a href="#speakers">Palestrantes</a>
+    <a href="#about">Sobre</a>
+    <a href="#sponsor">Seja um Patrocinador</a>
+    <a href="#registration" class="btn-mobile">Inscreva-se Agora</a>
+  </div>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-bg">
+      <div class="parallax-img" id="parallax-img">
+        <img src="https://media.base44.com/images/public/6a0f6ddec17ecab63a93ce8d/6a7ab0cb6_generated_image.png" alt="Cerrado Goiano" />
+      </div>
+      <div class="hero-overlay"></div>
+      <div class="hero-overlay-2"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-text">
+        <div class="hero-badge reveal"><div class="line"></div><span>1ª Edição · UFG 2027</span></div>
+        <h1 class="reveal" style="transition-delay:0.1s">Congresso de<br>Fermentados<br><em>Enológicos</em><br>do Cerrado</h1>
+        <p class="reveal" style="transition-delay:0.25s">Ciência, vinho e terroir no coração do Cerrado Goiano. Dois dias de palestras, mesas-redondas e experiências enológicas únicas.</p>
+        <div class="hero-info reveal" style="transition-delay:0.38s">
+          <div class="info-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg><span>07 e 08 de Maio de 2027</span></div>
+          <div class="info-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Goiânia — Auditório OCB GO</span></div>
+          <div class="info-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5"/></svg><span>Coordenação UFG</span></div>
+        </div>
+        <div class="hero-btns reveal" style="transition-delay:0.5s">
+          <a href="#registration" class="btn-primary">Inscreva-se Agora</a>
+          <a href="#schedule" class="btn-outline">Ver Programação</a>
+        </div>
+      </div>
+      <div class="hero-grape reveal" style="transition-delay:0.3s">
+        <div class="grape-wrapper">
+          <div class="grape-glow"></div>
+          <img src="https://media.base44.com/images/public/6a0f6ddec17ecab63a93ce8d/b6ac2b358_generated_image.png" alt="Uvas para vinho no Cerrado" />
+        </div>
+      </div>
+    </div>
+    <button class="scroll-indicator" onclick="document.querySelector('#tracks').scrollIntoView({behavior:'smooth'})" aria-label="Scroll down">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><polyline points="19 12 12 19 5 12"/></svg>
+    </button>
+  </section>
+
+  <!-- TRACKS -->
+  <section id="tracks" class="section">
+    <div class="container">
+      <div class="tracks-intro">
+        <div>
+          <div class="section-label no-after reveal">Programação Científica</div>
+          <h2 class="reveal" style="transition-delay:0.1s;font-family:var(--font-heading);font-weight:700;font-size:clamp(2rem,4vw,3.25rem);line-height:1.15;">Seis eixos de<br><em style="font-style:italic;color:var(--primary);">conhecimento</em></h2>
+        </div>
+        <p class="reveal" style="transition-delay:0.2s;font-size:1.125rem;color:var(--muted-fg);line-height:1.6;">Da viticultura tropical ao enoturismo, da química analítica à vinoterapia — dois dias densos de ciência, prática e conexões que transformam carreiras.</p>
+      </div>
+
+      <div class="track-cards">
+        <div class="track-card reveal" style="transition-delay:0s">
+          <div class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg></div>
+          <h3>Leveduras &amp; Vinificação</h3>
+          <p>Caracterização e seleção de leveduras para processos de vinificação. Fermentações espontâneas com identidade de terroir.</p>
+          <div class="track-author">Profa. Esther Pedroso Theissen</div>
+        </div>
+        <div class="track-card reveal" style="transition-delay:0.08s">
+          <div class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 2v6.292a7 7 0 105 0V2"/></svg></div>
+          <h3>Química do Vinho</h3>
+          <p>Determinação de perfis metabólicos em uvas e vinhos do Cerrado. Análises por métodos OIV internacionais.</p>
+          <div class="track-author">Dr. Giuliano Pereira · Dra. Fernanda Spinelli</div>
+        </div>
+        <div class="track-card reveal" style="transition-delay:0.16s">
+          <div class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s-8-4.5-8-11.8A8 8 0 0112 2a8 8 0 018 8.2c0 7.3-8 11.8-8 11.8z"/><circle cx="12" cy="10" r="3"/></svg></div>
+          <h3>Tipicidade &amp; Terroir</h3>
+          <p>Tipicidade dos vinhos do Cerrado. Dupla Poda e Vitivinicultura Tropical aplicada ao Brasil Central.</p>
+          <div class="track-author">ABS Patrícia Brentzel</div>
+        </div>
+        <div class="track-card reveal" style="transition-delay:0.24s">
+          <div class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg></div>
+          <h3>Enoturismo &amp; Cerrado</h3>
+          <p>Potencial enoturístico do Bioma Cerrado. Enoturismo Goiano, Candango e frutas de potencial enológico.</p>
+          <div class="track-author">Prof. Jean Carlos Vieira Santos</div>
+        </div>
+        <div class="track-card reveal" style="transition-delay:0.32s">
+          <div class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/></svg></div>
+          <h3>Cosmética &amp; Vinoterapia</h3>
+          <p>Aplicações inovadoras dos compostos bioativos do vinho na cosmética e práticas de vinoterapia.</p>
+          <div class="track-author">Prof. Elton Clementino da Silva</div>
+        </div>
+        <div class="track-card reveal" style="transition-delay:0.4s">
+          <div class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"/></svg></div>
+          <h3>Vinícolas &amp; ESG</h3>
+          <p>Projetos vinícolas sob olhar mercadológico. Princípios ESG e aspectos técnicos em edificações vinícolas.</p>
+          <div class="track-author">Dra. Andreia Belusso · Profa. Karla Hora</div>
+        </div>
+      </div>
+
+      <div class="quote-banner reveal" style="transition-delay:0.3s">
+        <img src="https://media.base44.com/images/public/6a0f6ddec17ecab63a93ce8d/a03b811e0_generated_image.png" alt="Vinho servido com folhas do cerrado" loading="lazy" />
+        <div class="quote-overlay">
+          <blockquote><p>"Do solo goiano nasce um vinho com alma de Cerrado."</p><footer>— Comitê Científico ConFEC-UFG 2027</footer></blockquote>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MINI CURSOS -->
+  <section id="mini-cursos" class="section" style="background:hsla(42,30%,92%,0.5)">
+    <div class="container" style="max-width:1024px">
+      <div class="section-header">
+        <div class="section-label reveal">Pré-Congresso</div>
+        <h2 class="reveal" style="transition-delay:0.1s">Mini Cursos <em>Pré-Congresso</em></h2>
+        <p class="reveal" style="transition-delay:0.15s">5ª Feira, 06 de Maio de 2027 · 8h às 21h</p>
+      </div>
+      <div class="mini-cursos-grid">
+        <div class="mini-curso-card reveal">
+          <div class="mc-time">8h – 10h30</div>
+          <h3>Química Enológica</h3>
+          <p class="mc-speakers">Prof. Dr. Leandro Dias, Lincoln University, Nova Zelândia<br>Prof. Dr. Eric Gil, UFG</p>
+          <div class="mc-info"><span class="mc-price">R$ 200,00</span><span class="mc-local">Sala pós FF UFG, 4º andar</span></div>
+        </div>
+        <div class="mini-curso-card reveal" style="transition-delay:0.08s">
+          <div class="mc-time">10h30 – 13h</div>
+          <h3>Fisiologia da Videira</h3>
+          <p class="mc-speakers">Prof. Dr. Leonardo Cury da Silva, Universidade Livre do Vinho<br>Prof. Diogo Pedrosa da Silva, UFLA</p>
+          <div class="mc-info"><span class="mc-price">R$ 200,00</span><span class="mc-local">Sala pós FF UFG, 4º andar</span></div>
+        </div>
+        <div class="mini-curso-card reveal" style="transition-delay:0.16s">
+          <div class="mc-time">14h – 17h30</div>
+          <h3>Benefits of Fermented Foods</h3>
+          <p class="mc-speakers">Prof. Dr. Folarin Oguntoyinbo, Appalachian State University, USA<br>Prof. Dr. Svetoslav Todorov, FCF USP</p>
+          <div class="mc-info"><span class="mc-price">R$ 200,00</span><span class="mc-local">Sala pós FF UFG, 4º andar</span></div>
+        </div>
+        <div class="mini-curso-card reveal" style="transition-delay:0.24s">
+          <div class="mc-time">18h30 – 21h</div>
+          <h3>Harmonização Música &amp; Vinho</h3>
+          <p class="mc-speakers">Prof. Dr. David F. C. Castelo, UFG<br>Patricia Brentzel, ABS SP</p>
+          <div class="mc-info"><span class="mc-price">R$ 300,00</span><span class="mc-local">OCB GO</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SCHEDULE -->
+  <section id="schedule" class="section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label reveal">Cronograma</div>
+        <h2 class="reveal" style="transition-delay:0.1s">Dois dias de <em>imersão total</em></h2>
+        <p class="reveal" style="transition-delay:0.15s">Palestras, mesas-redondas, pôsteres e rodas de conversa com os maiores especialistas em enologia do Cerrado.</p>
+        <div class="legend">
+          <div class="legend-item"><div class="legend-dot" style="background:var(--primary)"></div> Palestra</div>
+          <div class="legend-item"><div class="legend-dot" style="background:var(--secondary)"></div> Mesa Redonda</div>
+          <div class="legend-item"><div class="legend-dot" style="background:var(--accent)"></div> Abertura / Coffee</div>
+          <div class="legend-item"><div class="legend-dot" style="background:var(--muted-fg)"></div> Intervalo</div>
+        </div>
+      </div>
+      <div class="schedule-grid">
+        <div><div class="day-header reveal"><div class="day-circle">D1</div><div class="day-date">07 de Maio — 6ª Feira</div></div><div class="schedule-items" id="sched-day1"></div></div>
+        <div><div class="day-header reveal"><div class="day-circle">D2</div><div class="day-date">08 de Maio — Sábado</div></div><div class="schedule-items" id="sched-day2"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SPEAKERS -->
+  <section id="speakers">
+    <div class="sb1"></div><div class="sb2"></div>
+    <div class="container" style="position:relative;z-index:10">
+      <div class="section-header">
+        <div class="section-label dark reveal">Palestrantes &amp; Especialistas</div>
+        <h2 class="reveal" style="transition-delay:0.1s;font-family:var(--font-heading);font-weight:700;font-size:clamp(2rem,4vw,3.25rem);line-height:1.15;color:hsl(42,35%,92%)">Quem vai transformar<br><em style="font-style:italic;color:var(--accent-light)">seu conhecimento</em></h2>
+      </div>
+      <div class="speakers-grid" id="speakers-grid"></div>
+    </div>
+  </section>
+  <div id="speaker-modal"><div class="modal-content"><div class="modal-header"><div class="modal-initials" id="modal-initials"></div><button class="modal-close" onclick="closeSpeakerModal()"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button></div><h3 id="modal-name"></h3><p class="m-role" id="modal-role"></p><p class="m-inst" id="modal-inst"></p></div></div>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="stats-grid reveal">
+        <div class="stat-card"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg><div class="stat-value">500+</div><div class="stat-label">Participantes</div></div>
+        <div class="stat-card" style="transition-delay:0.1s"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg><div class="stat-value">2</div><div class="stat-label">Dias de Evento</div></div>
+        <div class="stat-card" style="transition-delay:0.2s"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 1a3 3 0 00-3 3v8a3 3 0 006 0V4a3 3 0 00-3-3z"/><path d="M19 10v2a7 7 0 01-14 0v-2"/><line x1="12" y1="19" x2="12" y2="23"/><line x1="8" y1="23" x2="16" y2="23"/></svg><div class="stat-value">7</div><div class="stat-label">Palestras</div></div>
+        <div class="stat-card" style="transition-delay:0.3s"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/></svg><div class="stat-value">3</div><div class="stat-label">Mesas-Redondas</div></div>
+      </div>
+      <div class="about-grid">
+        <div class="about-text reveal-left">
+          <div class="section-label no-after">Sobre o ConFEC</div>
+          <h2>O encontro entre<br>ciência e <em>vinho goiano</em></h2>
+          <p>O Congresso de Fermentados Enológicos do Cerrado nasce com a proposta de consolidar Goiânia como um importante ponto de encontro para pesquisadores, produtores, empreendedores, estudantes e apreciadores do universo enológico no Brasil Central.</p>
+          <p>O evento vai conectar ciência, mercado e inovação por meio de palestras, debates e experiências voltadas ao desenvolvimento sustentável da vitivinicultura e dos fermentados produzidos no Cerrado brasileiro.</p>
+          <p>A programação reunirá representantes das áreas de agronomia, engenharia de alimentos, química, farmácia, nutrição e empreendedorismo, promovendo networking qualificado e visibilidade ao mercado de vinhos do Centro-Oeste brasileiro.</p>
+          <div class="info-box">
+            <div class="info-row"><span class="info-label">Data</span><span class="info-value">07 e 08 de Maio de 2027</span></div>
+            <div class="info-row"><span class="info-label">Local</span><span class="info-value">Auditório OCB-GO, Avenida Jamel Cecílio, 3.527 — Jardim Goiás, Goiânia-GO</span></div>
+            <div class="info-row"><span class="info-label">Coordenação</span><span class="info-value">Eric de Souza Gil — vitivini.escoladepos@ufg.br</span></div>
+            <div class="info-row"><span class="info-label">Quem pode participar</span><span class="info-value">Profissionais, pesquisadores, estudantes, produtores e apreciadores</span></div>
+          </div>
+        </div>
+        <div class="about-images reveal-right">
+          <div><img src="https://media.base44.com/images/public/6a0f6ddec17ecab63a93ce8d/1c32aa253_generated_image.png" alt="Vinhedo no Cerrado" loading="lazy" /></div>
+          <div class="img-offset"><img src="https://media.base44.com/images/public/6a0f6ddec17ecab63a93ce8d/ca562fff2_generated_image.png" alt="Ciência enológica" loading="lazy" /></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ORGANIZERS -->
+  <section id="organizers">
+    <div class="container" style="max-width:1024px">
+      <div class="section-header reveal">
+        <div class="section-label">Realização &amp; Apoio</div>
+        <h2 style="font-size:clamp(1.6rem,3vw,2.4rem)">Organizadores e Parceiros</h2>
+      </div>
+      <div class="org-section reveal" style="transition-delay:0.1s"><div class="org-label">Organização</div><div class="org-img"><img src="https://media.base44.com/images/public/6a0f6ddec17ecab63a93ce8d/e42770ed9_image.png" alt="Organizadores" loading="lazy" /></div></div>
+      <div class="org-section reveal" style="transition-delay:0.2s"><div class="org-label">Patrocinador</div><div class="org-img"><img src="https://media.base44.com/images/public/6a0f6ddec17ecab63a93ce8d/83ef9b4fd_image.png" alt="Patrocinador OCB-GO" loading="lazy" style="max-height:100px" /></div></div>
+    </div>
+  </section>
+
+  <!-- REGISTRATION -->
+  <section id="registration">
+    <div class="reg-bg-1"></div><div class="reg-bg-2"></div>
+    <div class="container" style="max-width:768px;position:relative;z-index:10;text-align:center">
+      <div class="reveal">
+        <div class="section-label dark">Inscrições</div>
+        <h2 style="font-family:var(--font-heading);font-weight:700;font-size:clamp(2rem,4vw,3.25rem);line-height:1.15;color:hsl(42,35%,92%);margin-bottom:1rem">Garanta seu lugar<br><em style="font-style:italic;color:var(--accent-light)">no 1º ConFEC-UFG</em></h2>
+        <p style="font-size:1.125rem;color:hsl(42,25%,70%);max-width:28rem;margin:0 auto 2rem;line-height:1.6">Vagas limitadas. Escolha sua categoria e garanta sua presença.</p>
+        <div class="pricing">
+          <div class="price-card reveal"><div class="pc-label">Passaporte Acadêmico/Enófilio</div><div class="pc-price">R$ 250</div></div>
+          <div class="price-card reveal" style="transition-delay:0.08s"><div class="pc-label">Passaporte Empreendedores</div><div class="pc-price">R$ 300</div></div>
+          <div class="price-card reveal" style="transition-delay:0.16s"><div class="pc-label">Acadêmico/Enófilio Dia 07/05</div><div class="pc-price">R$ 150</div></div>
+          <div class="price-card reveal" style="transition-delay:0.24s"><div class="pc-label">Acadêmico/Enófilio Dia 08/05</div><div class="pc-price">R$ 150</div></div>
+        </div>
+      </div>
+      <div class="reveal" style="transition-delay:0.2s">
+        <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:1rem;max-width:28rem;margin:0 auto">
+          <a href="https://web.ufg.br/plateia-inscrito/#/inscricao/realizar-inscricao/1118" target="_blank" rel="noopener" style="border:2px solid hsla(42,35%,95%,0.3);color:hsl(42,35%,85%);font-weight:500;font-size:0.95rem;padding:0.875rem 2rem;border-radius:9999px;display:flex;align-items:center;justify-content:center;gap:0.75rem;transition:background 0.3s,transform 0.3s;min-width:240px" onmouseover="this.style.background='hsla(42,35%,95%,0.08)';this.style.transform='translateY(-2px)'" onmouseout="this.style.background='';this.style.transform=''">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            Realizar Inscrição
+          </a>
+          <a href="https://web.ufg.br/plateia-inscrito/#/inscrito/minhas-inscricoes//1118" target="_blank" rel="noopener" style="border:2px solid hsla(42,35%,95%,0.3);color:hsl(42,35%,85%);font-weight:500;font-size:0.95rem;padding:0.875rem 2rem;border-radius:9999px;display:flex;align-items:center;justify-content:center;gap:0.75rem;transition:background 0.3s,transform 0.3s;min-width:240px" onmouseover="this.style.background='hsla(42,35%,95%,0.08)';this.style.transform='translateY(-2px)'" onmouseout="this.style.background='';this.style.transform=''">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+            Acompanhar Inscrição
+          </a>
+          <a href="https://web.ufg.br/plateia-inscrito/#/inscrito/dados-pessoais" target="_blank" rel="noopener" style="border:2px solid hsla(42,35%,95%,0.3);color:hsl(42,35%,85%);font-weight:500;font-size:0.95rem;padding:0.875rem 2rem;border-radius:9999px;display:flex;align-items:center;justify-content:center;gap:0.75rem;transition:background 0.3s,transform 0.3s" onmouseover="this.style.background='hsla(42,35%,95%,0.08)';this.style.transform='translateY(-2px)'" onmouseout="this.style.background='';this.style.transform=''">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 14.66V20a2 2 0 01-2 2H4a2 2 0 01-2-2V6a2 2 0 012-2h5.34"/><polygon points="18 2 22 6 12 16 8 16 8 12 18 2"/></svg>
+            Alterar Dados Pessoais
+          </a>
+        </div>
+      </div>
+      <div class="contact-line reveal" style="transition-delay:0.4s">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 7l-10 7L2 7"/></svg>
+        <span>Dúvidas? Contate a coordenação: <a href="mailto:vitivini.escoladepos@ufg.br">vitivini.escoladepos@ufg.br</a></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- SPONSOR -->
+  <section id="sponsor" class="section">
+    <div class="container" style="max-width:1024px">
+      <div class="section-header">
+        <div class="section-label reveal">Apoio Institucional</div>
+        <h2 class="reveal" style="transition-delay:0.1s">Seja um <em>patrocinador</em></h2>
+      </div>
+      <div class="sponsor-table-wrapper reveal">
+        <table class="sponsor-table">
+          <thead>
+            <tr><th>Categoria</th><th>Investimento</th><th>Bônus</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="cat-aula-magna">Aula Magna</td><td>R$ 18.000,00</td><td>Destaque institucional e participação de alta visibilidade, 10 ingressos de cortesia</td></tr>
+            <tr><td class="cat-diamante">Diamante</td><td>R$ 12.000,00</td><td>Stand premium, destaque máximo da marca e palestra no evento, 8 ingressos cortesia</td></tr>
+            <tr><td class="cat-ouro">Ouro</td><td>R$ 8.000,00</td><td>Exposição qualificada, ativações de marca e presença estratégica em rodas de conversa com produtores, 6 ingressos cortesia</td></tr>
+            <tr><td class="cat-prata">Prata</td><td>R$ 4.000,00</td><td>Presença institucional e distribuição de matérias promocionais, 4 ingressos cortesia</td></tr>
+            <tr><td class="cat-bronze">Bronze</td><td>R$ 2.500,00</td><td>Exposição básica da marca e apoio institucional, 2 ingressos cortesia</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="sponsor-text-grid">
+        <div class="sponsor-text-card reveal" style="transition-delay:0.1s">
+          <h3>Por que apoiar este projeto?</h3>
+          <ul>
+            <li>Associação da marca a um evento inovador e de forte potencial regional.</li>
+            <li>Presença diante de um público qualificado e altamente segmentado.</li>
+            <li>Fortalecimento institucional junto à comunidade científica e produtiva.</li>
+            <li>Visibilidade em materiais gráficos, digitais e ações presenciais.</li>
+            <li>Participação em um movimento de valorização do terroir do Cerrado brasileiro.</li>
+          </ul>
+        </div>
+        <div class="sponsor-text-card reveal" style="transition-delay:0.2s">
+          <h3>Convite à Parceria</h3>
+          <ul>
+            <li>Presença institucional e distribuição de materiais promocionais.</li>
+            <li>Convidamos sua instituição a integrar este projeto e participar da construção de um novo cenário para os fermentados enológicos no Cerrado brasileiro.</li>
+            <li>Estamos à disposição para apresentar detalhes do evento, possibilidades de ativação de marca e propostas personalizadas de parceria.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="sponsor-contact reveal" style="transition-delay:0.3s">
+        <p>Entre em contato: <a href="mailto:vitivini.escoladepos@ufg.br">vitivini.escoladepos@ufg.br</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand"><img src="https://media.base44.com/images/public/6a0f6ddec17ecab63a93ce8d/2b5df1fbe_image.png" alt="Logo ConFEC" /><h3>Con<span>FEC</span>-UFG</h3></div>
+          <p class="footer-desc">1º Congresso de Fermentados Enológicos do Cerrado. Goiânia · Auditório OCB-GO · 07 e 08 de Maio de 2027.</p>
+        </div>
+        <div>
+          <h4>Navegação</h4>
+          <div class="footer-links">
+            <a href="#tracks">Trilhas Científicas</a><a href="#mini-cursos">Mini Cursos</a><a href="#schedule">Cronograma</a><a href="#speakers">Palestrantes</a><a href="#about">Sobre o Evento</a><a href="#registration">Inscrição</a><a href="#sponsor">Seja um Patrocinador</a>
+          </div>
+        </div>
+        <div>
+          <h4>Contato</h4>
+          <div class="footer-contact">
+            <a href="mailto:vitivini.escoladepos@ufg.br"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 7l-10 7L2 7"/></svg>vitivini.escoladepos@ufg.br</a>
+            <div class="fc-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Av. Jamel Cecílio, 3.527<br>Jardim Goiás — Goiânia, GO</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom"><span>© 2027 ConFEC-UFG. Congresso de Fermentados Enológicos do Cerrado.</span><span>Coordenação Geral: Eric de Souza Gil — UFG</span></div>
+    </div>
+  </footer>
+
+  </div><!-- end #app-content -->
+<script>
+  (function() {
+      var typeClass = { talk:'sched-talk', table:'sched-table', special:'sched-special', break:'sched-break' };
+
+      function renderSchedule(items, id) {
+        var h = '';
+        items.forEach(function(it) {
+          h += '<div class="schedule-item ' + (typeClass[it.type]||'') + ' reveal"><div class="time-col"><div class="dot"></div><span class="time">' + it.time + '</span></div><div class="content"><div class="title">' + it.content + '</div><div class="detail">' + it.detail + '</div></div></div>';
+        });
+        document.getElementById(id).innerHTML = h;
+      }
+
+      renderSchedule([
+        {time:'08h–09h',type:'special',content:'Coffee / Abertura',detail:'Palestra Dr. Sebastião Ferro (30 min)'},
+        {time:'09h–10h30',type:'talk',content:'Palestra 1',detail:'Caracterização e seleção de leveduras para processos de vinificação — Profa. Esther Pedroso Theissen'},
+        {time:'10h30–12h',type:'talk',content:'Palestra 2',detail:'Química do Vinho. Determinação de perfis metabólicos em uvas e vinhos — Dr. Giuliano Pereira'},
+        {time:'12h–13h30',type:'break',content:'Almoço',detail:'Palestra com Produtores'},
+        {time:'13h30–15h',type:'table',content:'Mesa Redonda 1',detail:'O Terroir do Brasil Central — Desafios e Soluções (Coord. Prof. Marcio de Carvalho Pires)'},
+        {time:'15h–16h30',type:'talk',content:'Palestra 3',detail:'Tipicidade dos Vinhos do Cerrado — ABS Patrícia Brentzel'},
+        {time:'16h30–17h30',type:'special',content:'Coffee / Pôsteres',detail:'Sessão de apresentações de pôsteres científicos'},
+        {time:'17h30–19h',type:'table',content:'Mesa Redonda 2',detail:'Enoturismo e o Potencial do Bioma Cerrado (Prof. Dr. Rafael Lavrador Sant Anna)'},
+        {time:'+19h',type:'break',content:'Roda de Conversa',detail:'Com Expositores'}
+      ], 'sched-day1');
+
+      renderSchedule([
+        {time:'08h–09h',type:'special',content:'Coffee',detail:'Boas-vindas ao segundo dia'},
+        {time:'09h–10h30',type:'talk',content:'Palestra 4',detail:'Métodos de Análises da OIV — Dra. Fernanda Rodrigues Spinelli'},
+        {time:'10h30–12h',type:'talk',content:'Palestra 5',detail:'Cosmética Enológica e Vinoterapia — Prof. Elton Clementino da Silva'},
+        {time:'12h–13h30',type:'break',content:'Almoço',detail:'Palestra com Produtores'},
+        {time:'13h30–15h',type:'table',content:'Mesa Redonda 3',detail:"Construções e Manutenção em Vinícolas (Coord. MsC Edna Aparecida Sant'Anna Moura)"},
+        {time:'15h–16h30',type:'talk',content:'Palestra 6',detail:'Trabalhos Orais — Alunos da Pós Lato Sensu em Vitivinicultura, Serviços e Produtos'},
+        {time:'16h30–17h30',type:'special',content:'Coffee / Pôsteres',detail:'Sessão de apresentações de pôsteres científicos'},
+        {time:'17h30–19h',type:'special',content:'Encerramento',detail:'Vinho e Música — Prof. Dr. David Castelo'},
+        {time:'+19h',type:'break',content:'Roda de Conversa',detail:'Com Expositores'}
+      ], 'sched-day2');
+
+      var speakers = [
+        {name:'Dr. Sebastião Ferro',role:'Conferência de Abertura',institution:'Palestra inaugural — 30 min',initials:'SF',color:'hsl(145,35%,22%)'},
+        {name:'Profa. Esther Pedroso Theissen',role:'Microbiologia Enológica',institution:'Leveduras para Vinificação',initials:'ET',color:'hsl(347,45%,35%)'},
+        {name:'Dr. Giuliano Pereira',role:'Química do Vinho',institution:'Perfis Metabólicos em Uvas e Vinhos',initials:'GP',color:'hsl(145,35%,30%)'},
+        {name:'ABS Patrícia Brentzel',role:'Sommelier / Enólogo',institution:'Tipicidade dos Vinhos do Cerrado',initials:'PB',color:'hsl(347,45%,40%)'},
+        {name:'Dra. Fernanda Rodrigues Spinelli',role:'Análises OIV',institution:'Métodos de Análises Internacionais',initials:'FS',color:'hsl(145,35%,22%)'},
+        {name:'Prof. Elton Clementino da Silva',role:'Cosmética Enológica',institution:'Vinoterapia e Compostos Bioativos',initials:'EC',color:'hsl(38,60%,42%)'},
+        {name:'Prof. Dr. David Castelo',role:'Vinho & Cultura',institution:'Integração entre Vinho e Música',initials:'DC',color:'hsl(347,45%,35%)'},
+        {name:'Prof. Marcio de Carvalho Pires',role:'Viticultura Tropical',institution:'Terroir do Brasil Central',initials:'MP',color:'hsl(145,35%,22%)'},
+        {name:'Prof. Dr. Rafael Lavrador Sant Anna',role:'Enoturismo',institution:'Potencial do Bioma Cerrado',initials:'RL',color:'hsl(38,60%,42%)'},
+        {name:'Dra. Andreia Belusso',role:'Gestão Vinícola',institution:'Projetos Vinícolas & Mercado',initials:'AB',color:'hsl(347,45%,35%)'},
+        {name:'Prof. Roberto Freitas',role:'Viticultura',institution:'Dupla Poda e Vitivinicultura Tropical',initials:'RF',color:'hsl(145,35%,30%)'},
+        {name:"MsC Edna Sant'Anna Moura",role:'Engenharia Vinícola',institution:'Construções e Manutenção em Vinícolas',initials:'EM',color:'hsl(145,35%,22%)'}
+      ];
+
+      var sg = document.getElementById('speakers-grid');
+      speakers.forEach(function(sp) {
+        var btn = document.createElement('button');
+        btn.className = 'speaker-card reveal';
+        btn.innerHTML = '<div class="initials-circle" style="background:' + sp.color + '33"><span style="color:' + sp.color + '">' + sp.initials + '</span></div><h3>' + sp.name + '</h3><div class="role">' + sp.role + '</div><div class="inst">' + sp.institution + '</div>';
+        btn.onclick = function() { openSpeakerModal(sp); };
+        sg.appendChild(btn);
+      });
+
+      function handleReveal() {
+        document.querySelectorAll('.reveal,.reveal-left,.reveal-right').forEach(function(el) {
+          if (el.getBoundingClientRect().top < window.innerHeight - 80) el.classList.add('visible');
+        });
+      }
+
+      var navbar = document.getElementById('navbar');
+      function handleScroll() {
+        navbar.classList.toggle('scrolled', window.scrollY > 80);
+        handleReveal();
+      }
+
+      var pi = document.getElementById('parallax-img');
+      function handleParallax(e) {
+        if (!pi) return;
+        var x = (e.clientX / window.innerWidth - 0.5) * 18;
+        var y = (e.clientY / window.innerHeight - 0.5) * 18;
+        pi.style.transform = 'translate(' + x + 'px, ' + y + 'px) scale(1.08)';
+      }
+
+      var menuToggle = document.getElementById('menu-toggle'), mobileMenu = document.getElementById('mobile-menu');
+      var menuOpen = false, mio = document.getElementById('menu-icon-open'), mic = document.getElementById('menu-icon-close');
+      menuToggle.addEventListener('click', function() {
+        menuOpen = !menuOpen;
+        mobileMenu.classList.toggle('open', menuOpen);
+        mio.style.display = menuOpen ? 'none' : 'block';
+        mic.style.display = menuOpen ? 'block' : 'none';
+      });
+      mobileMenu.querySelectorAll('a').forEach(function(l) {
+        l.addEventListener('click', function() {
+          menuOpen = false; mobileMenu.classList.remove('open');
+          mio.style.display = 'block'; mic.style.display = 'none';
+        });
+      });
+
+      document.querySelectorAll('a[href^="#"]').forEach(function(a) {
+        a.addEventListener('click', function(e) {
+          var h = this.getAttribute('href');
+          if (h === '#') return;
+          e.preventDefault();
+          var t = document.querySelector(h);
+          if (t) t.scrollIntoView({behavior:'smooth'});
+        });
+      });
+
+      window.addEventListener('scroll', handleScroll, {passive:true});
+      window.addEventListener('mousemove', handleParallax, {passive:true});
+      handleScroll();
+    })();
+
+    function openSpeakerModal(sp) {
+      document.getElementById('modal-initials').textContent = sp.initials;
+      document.getElementById('modal-initials').style.color = sp.color;
+      document.getElementById('modal-initials').style.background = sp.color + '22';
+      document.getElementById('modal-name').textContent = sp.name;
+      document.getElementById('modal-role').textContent = sp.role;
+      document.getElementById('modal-inst').textContent = sp.institution;
+      document.getElementById('speaker-modal').classList.add('open');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeSpeakerModal() {
+      document.getElementById('speaker-modal').classList.remove('open');
+      document.body.style.overflow = '';
+    }
+
+    document.getElementById('speaker-modal').addEventListener('click', function(e) { if (e.target === this) closeSpeakerModal(); });
+    document.addEventListener('keydown', function(e) { if (e.key === 'Escape') closeSpeakerModal(); });
+</script>
