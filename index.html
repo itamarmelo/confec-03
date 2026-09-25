@@ -432,19 +432,19 @@
       <div class="section-header">
         <div class="section-label reveal">Pré-Congresso</div>
         <h2 class="reveal" style="transition-delay:0.1s">Mini Cursos <em>Pré-Congresso</em></h2>
-        <p class="reveal" style="transition-delay:0.15s">5ª Feira, 06 de Maio de 2027 · 8h às 21h</p>
+        <p class="reveal" style="transition-delay:0.15s">5ª Feira, 06 de Maio de 2027 · 8h às 18h</p>
       </div>
       <div class="mini-cursos-grid">
-        <div class="mini-curso-card reveal">
+        <div class="mini-curso-card reveal" style="transition-delay:0.08s">
           <div class="mc-time">8h – 10h30</div>
-          <h3>Química Enológica</h3>
-          <p class="mc-speakers">Prof. Dr. Leandro Dias, Lincoln University, Nova Zelândia<br>Prof. Dr. Eric Gil, UFG</p>
+          <h3>IGs?: Benefícios, Etapas e Obrigações</h3>
+          <p class="mc-speakers">Dr. José Fernando Protas, Embrapa Uva e Vinho</p>
           <div class="mc-info"><span class="mc-price">R$ 200,00</span><span class="mc-local">Sala pós FF UFG, 4º andar</span></div>
         </div>
-        <div class="mini-curso-card reveal" style="transition-delay:0.08s">
+        <div class="mini-curso-card reveal" style="transition-delay:0.12s">
           <div class="mc-time">10h30 – 13h</div>
           <h3>Fisiologia da Videira</h3>
-          <p class="mc-speakers">Prof. Dr. Leonardo Cury da Silva, Universidade Livre do Vinho<br>Prof. Diogo Pedrosa da Silva, UFLA</p>
+          <p class="mc-speakers">Prof. Dr. Leonardo Cury da Silva, Universidade Livre do Vinho<br>Prof Dr Diogo Pedrosa Correa da Silva, UFLA</p>
           <div class="mc-info"><span class="mc-price">R$ 200,00</span><span class="mc-local">Sala pós FF UFG, 4º andar</span></div>
         </div>
         <div class="mini-curso-card reveal" style="transition-delay:0.16s">
@@ -578,6 +578,20 @@
     </div>
   </section>
 
+  <!-- ACCOMMODATION -->
+  <section id="hospedagem" class="section" style="background:var(--card)">
+    <div class="container" style="max-width:768px;text-align:center">
+      <div class="section-header">
+        <div class="section-label reveal">Planeje sua estadia</div>
+        <h2 class="reveal" style="transition-delay:0.1s">Sugestão de <em>hospedagem</em></h2>
+        <p class="reveal" style="transition-delay:0.15s">Vai participar do ConFEC? Consulte a sugestão de hospedagem e confira a disponibilidade e as condições de reserva.</p>
+      </div>
+      <div class="reveal" style="transition-delay:0.2s">
+        <a class="btn-primary" href="https://atlantica.letsbook.com.br/reserva/link-publico?r=c9e1d31a7ba846a4bb507fd27f41a4e8&amp;p=CONFEC20" target="_blank" rel="noopener noreferrer">Consultar hospedagem</a>
+      </div>
+    </div>
+  </section>
+
   <!-- SPONSOR -->
   <section id="sponsor" class="section">
     <div class="container" style="max-width:1024px">
@@ -636,7 +650,7 @@
         <div>
           <h4>Navegação</h4>
           <div class="footer-links">
-            <a href="#tracks">Trilhas Científicas</a><a href="#mini-cursos">Mini Cursos</a><a href="#schedule">Cronograma</a><a href="#speakers">Palestrantes</a><a href="#about">Sobre o Evento</a><a href="#registration">Inscrição</a><a href="#sponsor">Seja um Patrocinador</a>
+            <a href="#tracks">Trilhas Científicas</a><a href="#mini-cursos">Mini Cursos</a><a href="#schedule">Cronograma</a><a href="#speakers">Palestrantes</a><a href="#about">Sobre o Evento</a><a href="#registration">Inscrição</a><a href="#hospedagem">Planeje sua estadia</a><a href="#sponsor">Seja um Patrocinador</a>
           </div>
         </div>
         <div>
@@ -672,10 +686,10 @@
         {time:'09h–10h30',type:'talk',content:'Palestra 1',detail:'Caracterização e seleção de leveduras para processos de vinificação — Profa. Esther Pedroso Theissen'},
         {time:'10h30–12h',type:'talk',content:'Palestra 2',detail:'Química do Vinho. Determinação de perfis metabólicos em uvas e vinhos — Dr. Giuliano Pereira'},
         {time:'12h–13h30',type:'break',content:'Almoço',detail:'Palestra com Produtores'},
-        {time:'13h30–15h',type:'table',content:'Mesa Redonda 1',detail:'O Terroir do Brasil Central — Desafios e Soluções (Coord. Prof. Marcio de Carvalho Pires)'},
+        {time:'13h30–15h',type:'table',content:'Mesa Redonda 1',detail:'O Terroir do Brasil Central — Desafios e Soluções (Coord. Prof. Marcio de Carvalho Pires) — Participação: Dr. José Fernando Protas, Embrapa Uva e Vinho'},
         {time:'15h–16h30',type:'talk',content:'Palestra 3',detail:'Tipicidade dos Vinhos do Cerrado — ABS Patrícia Brentzel'},
         {time:'16h30–17h30',type:'special',content:'Coffee / Pôsteres',detail:'Sessão de apresentações de pôsteres científicos'},
-        {time:'17h30–19h',type:'table',content:'Mesa Redonda 2',detail:'Enoturismo e o Potencial do Bioma Cerrado (Prof. Dr. Rafael Lavrador Sant Anna)'},
+        {time:'17h30–19h',type:'table',content:'Mesa Redonda 2',detail:'Enoturismo e o Potencial do Bioma Cerrado (Prof. Dr. Rafael Lavrador Sant Anna) — Participação: Dr. José Fernando Protas, Embrapa Uva e Vinho'},
         {time:'+19h',type:'break',content:'Roda de Conversa',detail:'Com Expositores'}
       ], 'sched-day1');
 
@@ -701,9 +715,12 @@
         {name:'Prof. Dr. David Castelo',role:'Vinho & Cultura',institution:'Integração entre Vinho e Música',initials:'DC',color:'hsl(347,45%,35%)'},
         {name:'Prof. Marcio de Carvalho Pires',role:'Viticultura Tropical',institution:'Terroir do Brasil Central',initials:'MP',color:'hsl(145,35%,22%)'},
         {name:'Prof. Dr. Rafael Lavrador Sant Anna',role:'Enoturismo',institution:'Potencial do Bioma Cerrado',initials:'RL',color:'hsl(38,60%,42%)'},
-        {name:'Dra. Andreia Belusso',role:'Gestão Vinícola',institution:'Projetos Vinícolas & Mercado',initials:'AB',color:'hsl(347,45%,35%)'},
-        {name:'Prof. Roberto Freitas',role:'Viticultura',institution:'Dupla Poda e Vitivinicultura Tropical',initials:'RF',color:'hsl(145,35%,30%)'},
-        {name:"MsC Edna Sant'Anna Moura",role:'Engenharia Vinícola',institution:'Construções e Manutenção em Vinícolas',initials:'EM',color:'hsl(145,35%,22%)'}
+        {name:"MsC Edna Sant'Anna Moura",role:'Engenharia Vinícola',institution:'Construções e Manutenção em Vinícolas',initials:'EM',color:'hsl(145,35%,22%)'},
+        {name:'Dr. José Fernando Protas',role:'IGs?: Benefícios, Etapas e Obrigações · Mesas Redondas 1 e 2',institution:'Embrapa Uva e Vinho',initials:'JP',color:'hsl(347,45%,35%)'},
+        {name:'Prof. Dr. Leonardo Cury da Silva',role:'Fisiologia da Videira',institution:'Universidade Livre do Vinho',initials:'LC',color:'hsl(145,35%,30%)'},
+        {name:'Prof Dr Diogo Pedrosa Correa da Silva',role:'Fisiologia da Videira',institution:'UFLA',initials:'DP',color:'hsl(145,35%,22%)'},
+        {name:'Prof. Dr. Folarin Oguntoyinbo',role:'Benefits of Fermented Foods',institution:'Appalachian State University, USA',initials:'FO',color:'hsl(38,60%,42%)'},
+        {name:'Prof. Dr. Svetoslav Todorov',role:'Benefits of Fermented Foods',institution:'FCF USP',initials:'ST',color:'hsl(347,45%,35%)'}
       ];
 
       var sg = document.getElementById('speakers-grid');
