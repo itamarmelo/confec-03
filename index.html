@@ -147,6 +147,9 @@
     .schedule-item .dot { width: 8px; height: 8px; border-radius: 50%; margin-top: 0.375rem; flex-shrink: 0; }
     .schedule-item .time { font-size: 0.75rem; font-weight: 600; color: var(--muted-fg); line-height: 1.2; }
     .schedule-item .title { font-size: 0.875rem; font-weight: 700; }
+    .roundtable-coord { margin-top:.5rem; }
+    .roundtable-topics { padding-left:1rem; margin-top:.75rem; }
+    .roundtable-topics li + li { margin-top:.65rem; }
     .schedule-item .detail { font-size: 0.75rem; color: var(--muted-fg); margin-top: 2px; line-height: 1.4; }
     .sched-talk { background: hsla(145, 35%, 22%, 0.1); border-color: hsla(145, 35%, 22%, 0.3); }
     .sched-talk .dot { background: var(--primary); } .sched-talk .title { color: var(--primary); }
@@ -714,10 +717,10 @@
         {time:'09h–10h30',type:'talk',content:'Palestra 1',detail:'Caracterização e seleção de leveduras para processos de vinificação — Profa. Esther Pedroso Theissen'},
         {time:'10h30–12h',type:'talk',content:'Palestra 2',detail:'Química do Vinho. Determinação de perfis metabólicos em uvas e vinhos — Dr. Giuliano Pereira'},
         {time:'12h–13h30',type:'break',content:'Almoço',detail:'Palestra com Produtores'},
-        {time:'13h30–15h',type:'table',content:'Mesa Redonda 1',detail:'O Terroir do Brasil Central — Desafios e Soluções (Coord. Prof. Marcio de Carvalho Pires) — Participação: Dr. José Fernando Protas, Embrapa Uva e Vinho'},
+        {time:'13h30–15h',type:'table',content:'Mesa Redonda 1',detail:"<strong>O Terroir do Brasil Central. Desafios e soluções.</strong><p class=\"roundtable-coord\">Coordenação: Prof. Marcio de Carvalho Pires &amp; Dr. José Fernando Protas</p><ul class=\"roundtable-topics\"><li>Dupla Poda e a Vitivinicultura de Inverno. — Prof. Roberto José de Freitas — 10 min</li><li>Porta enxertos, castas e terroir. — Prof. Diogo Pedrosa Correa da Silva — 10 min</li><li>Adaptabilidade da videira a diferentes terroirs — Prof. Leonardo Cury da Silva — 10 min</li><li>Certificação de Material Propagativo de videira. — Dr. Daniel Santos Grohs — 10 min</li><li>Cooperativismo. Soluções para vitivinicultura. — Luis Alberto Pereira — 10 min</li></ul>"},
         {time:'15h–16h30',type:'talk',content:'Palestra 3',detail:'Tipicidade dos Vinhos do Cerrado — ABS Patrícia Brentzel'},
         {time:'16h30–17h30',type:'special',content:'Coffee / Pôsteres',detail:'Sessão de apresentações de pôsteres científicos'},
-        {time:'17h30–19h',type:'table',content:'Mesa Redonda 2',detail:'Enoturismo e o Potencial do Bioma Cerrado (Prof. Dr. Rafael Lavrador Sant Anna) — Participação: Dr. José Fernando Protas, Embrapa Uva e Vinho'},
+        {time:'17h30–19h',type:'table',content:'Mesa Redonda 2',detail:"<strong>Enoturismo. O Potencial do Bioma Cerrado</strong><p class=\"roundtable-coord\">Coordenação: Prof. Rafael Lavrador Sant Anna</p><ul class=\"roundtable-topics\"><li>Enoturismo Goiano — Prof. Jean Carlos Vieira Santos, Juliana Carvalho &amp; Adriana Carvalho Rodrigues — 10 min</li><li>Enoturismo Candango — Profa. Carolina Palhares, Ronaldo Triacca &amp; Profa. Alessandra dos Santos — 10 min</li><li>Frutas de potencial enológico — MsC Reginaldo Divino Carmo, Benito Amania, Lia Alvim &amp; Eng. Marcos Paulo Batista — 10 min</li><li>O impacto do IG — Fernando Protas</li></ul>"},
         {time:'+19h',type:'break',content:'Roda de Conversa',detail:'Com Expositores'}
       ], 'sched-day1');
 
@@ -726,7 +729,7 @@
         {time:'09h–10h30',type:'talk',content:'Palestra 4',detail:'Métodos de Análises da OIV — Dra. Fernanda Rodrigues Spinelli'},
         {time:'10h30–12h',type:'talk',content:'Palestra 5',detail:'Cosmética Enológica e Vinoterapia — Prof. Elton Clementino da Silva'},
         {time:'12h–13h30',type:'break',content:'Almoço',detail:'Palestra com Produtores'},
-        {time:'13h30–15h',type:'table',content:'Mesa Redonda 3',detail:"Construções e Manutenção em Vinícolas (Coord. MsC Edna Aparecida Sant'Anna Moura)"},
+        {time:'13h30–15h',type:'table',content:'Mesa Redonda 3',detail:"<strong>Construções e Manutenção em Vinícolas</strong><p class=\"roundtable-coord\">Coordenação: MsC Edna Aparecida Sant&#x27; Anna Moura</p><ul class=\"roundtable-topics\"><li>Projetos Vinícolas sob o olhar mercadológico. — Dra. Andreia Belusso — 45 min</li><li>Princípios ESG — Profa. Karla Emmanuela Ribeiro Hora — 15 min</li><li>Aspectos técnicos em Edificações Vinícolas. — Prof. Enio José Pazini Figueiredo — 15 min</li></ul>"},
         {time:'15h–16h30',type:'talk',content:'Palestra 6',detail:'Trabalhos Orais — Alunos da Pós Lato Sensu em Vitivinicultura, Serviços e Produtos'},
         {time:'16h30–17h30',type:'special',content:'Coffee / Pôsteres',detail:'Sessão de apresentações de pôsteres científicos'},
         {time:'17h30–19h',type:'special',content:'Encerramento',detail:'Vinho e Música — Prof. Dr. David Castelo'},
